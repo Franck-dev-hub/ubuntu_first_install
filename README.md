@@ -5,43 +5,74 @@ Automatic installation script to configure a complete development environment on
 
 ## ✨ Features
 
-### 🛠️ System Tools
-- **Automatic system update**
-- **Basic tools**: curl, wget, git, build-essential, etc.
-- **Ollama** for local AI
-- **Zsh + Oh My Zsh** as default shell
+# 🛠️ Outils et Environnements de Développement
 
-### 📝 Editors & Terminals
-- **Neovim + LazyVim** - Modern code editor
-- **Ghostty** - Modern terminal (if Zig ≥ 0.14.0 available)
-- **Neovim configuration** optimized with LazyVim
+---
 
-### 🐍 Python
-- Python 3 with pip and venv
-- Development tools: pycodestyle, uvicorn
-- Virtual environments
+<details>
+<summary><strong>🛠️ System Tools</strong></summary>
+   
+![Update](https://img.shields.io/badge/update-automatic-brightgreen)
+   
+</details>
 
-### 🦀 Rust
-- Installation via rustup
-- Additional tools: cargo-watch, trunk
+<details>
+<summary><strong>🤖 AI</strong></summary>
+   
+![Ollama](https://img.shields.io/badge/Ollama-local%20AI-blue?logo=ollama&logoColor=white)
+   
+</details>
 
-### 📦 JavaScript/Node.js
-- Node.js 20.x
-- Package managers: yarn, pnpm
-- Development tools: eslint, typescript, vite
+<details>
+<summary><strong>📝 Editors & Terminals</strong></summary>
 
-### ⚙️ C/C++
-- Compilers: gcc, g++
-- Build tools: make, cmake
+ ![zsh](https://img.shields.io/badge/Oh_My-zsh-purple?logo=zsh&logoColor=white) ![Neovim](https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=white) ![lazy](https://img.shields.io/badge/LazyVim-darkpurple?logo=neovim&logoColor=white) ![Ghostty](https://img.shields.io/badge/Ghostty-lightgrey?logo=ghostty&logoColor=white)
 
-### 📱 Mobile Development
-- **Android Studio** (via Snap)
-- **React Native CLI**
-- **Expo CLI**
+</details>
 
-### 🔗 Useful Aliases
-- Git shortcuts: `gt`, `ga`, `gc`, `gp`
+<details>
+<summary><strong>🐍 Python</strong></summary>
+
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](#) [![pip](https://img.shields.io/badge/pip-3776AB?logo=python&logoColor=white)](#) [![venv](https://img.shields.io/badge/venv-3776AB?logo=python&logoColor=white)](#) [![pycodestyle](https://img.shields.io/badge/pycodestyle-3776AB?logo=python&logoColor=white)](#) [![uvicorn](https://img.shields.io/badge/uvicorn-3776AB?logo=python&logoColor=white)](#)
+
+</details>
+
+<details>
+<summary><strong>🦀 Rust</strong></summary>
+
+[![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)](#) [![cargo](https://img.shields.io/badge/cargo-000000?logo=rust&logoColor=white)](#) [![cargo-watch](https://img.shields.io/badge/cargo--watch-000000?logo=rust&logoColor=white)](#) [![trunk](https://img.shields.io/badge/trunk-000000?logo=rust&logoColor=white)](#)
+
+</details>
+
+<details>
+<summary><strong>📦 JavaScript / Node.js</strong></summary>
+
+[![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)](#) [![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?logo=yarn&logoColor=white)](#) [![pnpm](https://img.shields.io/badge/pnpm-F69220?logo=pnpm&logoColor=white)](#) [![ESLint](https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white)](#) [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](#) [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](#)
+
+</details>
+
+<details>
+<summary><strong>⚙️ C / C++</strong></summary>
+
+[![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](#) [![C++](https://img.shields.io/badge/C++-00599C?logo=c%2B%2B&logoColor=white)](#) [![G++](https://img.shields.io/badge/G++-00599C?logo=gnu&logoColor=white)](#) [![Make](https://img.shields.io/badge/Make-00599C?logo=gnu&logoColor=white)](#) [![CMake](https://img.shields.io/badge/CMake-064F8C?logo=cmake&logoColor=white)](#)
+
+</details>
+
+<details>
+<summary><strong>📱 Mobile Development</strong></summary>
+
+![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?logo=android-studio&logoColor=white) ![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black) ![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
+
+</details>
+
+<details>
+<summary><strong>🔗 Useful Aliases</strong></summary>
+
+- Git shortcuts: `gt`, `ga`, `gc`, `gp`  
 - Neovim shortcuts: `n`, `vi`, `vim`
+
+</details>
+
 
 ## 🚀 Installation
 
@@ -71,20 +102,8 @@ cd ubuntu_first_install
    ```bash
    source ~/.zshrc
    ```
-
-2. **Verify the installation**:
-   ```bash
-   # Check Neovim
-   nvim --version
    
-   # Check Rust
-   rustc --version
-   
-   # Check Node.js
-   node --version
-   ```
-
-3. **Use the aliases**:
+2. **Use the aliases**:
    ```bash
    gt    # git status
    ga .  # git add .
@@ -97,16 +116,6 @@ The script automatically configures Neovim with LazyVim. On first launch:
 - Plugins will download automatically
 - Interface will be ready to use
 - Shortcuts are optimized for development
-
-## 🛠️ Installed Technologies
-
-[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](#)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](#)
-[![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](#)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](#)
-[![Neovim](https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white)](#)
-[![Zsh](https://img.shields.io/badge/Zsh-000000?style=for-the-badge&logo=zsh&logoColor=white)](#)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](#)
 
 ## 📁 Project Structure
 
