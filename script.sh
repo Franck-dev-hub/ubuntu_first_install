@@ -105,7 +105,7 @@ add_alias "alias vi=nvim"
 add_alias "alias vim=nvim"
 
 # Git
-add_alias "alias gt='git status'"
+add_alias "alias gs='git status'"
 add_alias "alias ga='git add'"
 add_alias "alias gc='git commit'"
 add_alias "alias gp='git push'"
