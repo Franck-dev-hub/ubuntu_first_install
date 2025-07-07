@@ -99,16 +99,35 @@ sudo npm install -g expo-cli react-native-cli
 # Add aliases
 echo "     ==========>     🔗 ADD ALIASES     <=========="
 
-# Neovim
-add_alias "alias n=nvim"
-add_alias "alias vi=nvim"
-add_alias "alias vim=nvim"
+if ! grep -q "# Vim" ~/.zshrc; then
+  cat << 'EOF' >> ~/.zshrc
+# Vim
+alias n="nvim"
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
 
-# Git
-add_alias "alias gs='git status'"
-add_alias "alias ga='git add'"
-add_alias "alias gc='git commit'"
-add_alias "alias gp='git push'"
+EOF
+fi
+
+if ! grep -q "# Github" ~/.zshrc; then
+  cat << 'EOF' >> ~/.zshrc
+# Github
+alias gs="clear && git status"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+
+EOF
+fi
+
+if ! grep -q "# Holberton" ~/.zshrc; then
+  cat << 'EOF' >> ~/.zshrc
+# Holberton
+alias gcch="gcc -Wall -pedantic -Werror -Wextra -std=gnu89"
+
+EOF
+fi
 
 echo "     ==========>     ⚡ CONFIGURE NEOVIM     <=========="
 NVIM_OPTIONS="$HOME/.config/nvim/lua/config/options.lua"
