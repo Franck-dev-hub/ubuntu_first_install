@@ -117,7 +117,12 @@ if ! grep -q "# Github" ~/.zshrc; then
 alias gs="clear && git status"
 alias ga="git add"
 alias gc="git commit"
+alias gca="git commit --amend"
+alias gcan="git commit --amend --no-edit"
 alias gp="git push"
+alias gpf="git push -f"
+alias gcanf="git commit --amend --no-edit && git push -f"
+alias gpl="git pull"
 
 EOF
 fi
@@ -126,6 +131,7 @@ if ! grep -q "# Holberton" ~/.zshrc; then
   cat << 'EOF' >> ~/.zshrc
 # Holberton
 alias gcch="gcc -Wall -pedantic -Werror -Wextra -std=gnu89"
+alias val="clear && valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all ./a.out"
 
 EOF
 fi
