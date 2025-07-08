@@ -14,11 +14,12 @@ add_alias() {
 
 # Update system
 echo "     ==========>     🔄 UPDATE SYSTEM     <=========="
-sudo apt update && sudo apt upgrade -y
+apt update && apt upgrade -y
+apt install sudo -y 
 
 # Install basic tools
 echo "     ==========>     🛠️  INSTALL BASIC TOOLS     <=========="
-sudo apt install -y sudo curl wget git build-essential software-properties-common ca-certificates lsb-release gnupg unzip neofetch screenfetch tree
+sudo apt install -y curl wget git build-essential software-properties-common ca-certificates lsb-release gnupg unzip neofetch screenfetch tree
 if ! command -v ollama &>/dev/null; then
 	curl -fsSL https://ollama.com/install.sh | sh
 fi
